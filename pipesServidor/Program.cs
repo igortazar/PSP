@@ -9,7 +9,8 @@ namespace pipesServidor
     {
         static void Main(string[] args)
         {
-           
+            try
+            {
                 var server = new NamedPipeServerStream("PipesOfPiece");
                 server.WaitForConnection();
                 Console.WriteLine("Servidor esperando datos");
@@ -21,8 +22,15 @@ namespace pipesServidor
                     Console.WriteLine(line);
                     Console.WriteLine("Servidor procesando datos");
                     writer.WriteLine(String.Join("", line.ToUpper()));
+                    Console.WriteLine(String.Join("","Datos enviados",line.ToUpper()));
                     writer.Flush();
                 }
+            } 
+            catch (Exception e)
+            {
+                Console.WriteLine("Apangado servidor por error");
+            }
+                
            
         }
     }

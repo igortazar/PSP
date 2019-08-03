@@ -13,6 +13,7 @@ namespace procesos2
 {
     public partial class Form1 : Form
     {
+        private Process p1 = null;
         public Form1()
         {
             InitializeComponent();
@@ -45,6 +46,30 @@ namespace procesos2
             var tmp = Process.Start(p);
         }
 
-       
+        private void Button4_Click(object sender, EventArgs e)
+        {
+            if(p1==null)
+            {
+                //iniciar pipes
+                ProcessStartInfo info = new ProcessStartInfo(@"..\..\..\pipe\bin\Release\netcoreapp2.1\win-x64\pipe.exe");
+                // su valor por defecto el false, si se establece a true no se "crea" ventana
+                info.CreateNoWindow = false;
+                info.WindowStyle = ProcessWindowStyle.Normal;
+                // indica si se utiliza el cmd para lanzar el proceso
+                info.UseShellExecute = true;
+                p1 = Process.Start(info);
+            }
+            
+        }
+
+        private void Button5_Click(object sender, EventArgs e)
+        {
+            //parar pipes
+            if(p1!=null && !p1.HasExited)
+            {
+                p1.Kill();
+                p1 = null;
+            }
+        }
     }
 }

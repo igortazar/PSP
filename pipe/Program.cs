@@ -35,7 +35,7 @@ namespace pipe
         static Process StartServer(out Process p1)
         {
             // iniciar un proceso con el servidor y devolver
-            ProcessStartInfo info = new ProcessStartInfo(@"..\..\..\..\pipesServidor\bin\Release\netcoreapp2.1\publish\pipesServidor.exe");
+            ProcessStartInfo info = new ProcessStartInfo(@"C:\Users\uterc\source\repos\psp\pipesServidor\bin\Release\netcoreapp2.1\publish\pipesServidor.exe");
             // su valor por defecto el false, si se establece a true no se "crea" ventana
             info.CreateNoWindow=false;
             info.WindowStyle = ProcessWindowStyle.Normal;
