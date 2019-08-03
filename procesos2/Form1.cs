@@ -39,5 +39,12 @@ namespace procesos2
                 var tmp = Process.Start(p);              
         }
 
+        private void Button3_Click(object sender, EventArgs e)
+        {
+            ProcessStartInfo p = new ProcessStartInfo(@"..\..\..\parametros\bin\Release\netcoreapp2.1\publish\parametros.exe", textBox1.Text);
+            var tmp = Process.Start(p);
+        }
+
+       
     }
 }
