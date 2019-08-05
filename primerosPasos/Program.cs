@@ -41,7 +41,16 @@ namespace primerosPasos
             Console.WriteLine("5+2={0}", tmp);
             modifica1(ref tmp);
             Console.WriteLine("5+2={0}", tmp);
+            int parametroSalida1, parametrosSalida2;
+            //la funcion devuelve dos resultados, misma idea que los parametros out de plsql
+            modifica1(out parametroSalida1,out parametrosSalida2, 4, 3);
 
+        }
+        public static void modifica1(out int uno,out int dos, in int v1, in int v2)
+        {
+            //v1 = 4; error la variable es de entrada y no se puede modificar
+            uno = v1 + 1;
+            dos = v2 + 3;
         }
         public static void modifica1(MiClase[] mis)
         {
