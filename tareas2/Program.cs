@@ -6,6 +6,7 @@ class Example
 {
     static void Main()
     {
+        //Action<object>
         Action<object> action = (object obj) =>
         {
             Console.WriteLine("Task={0}, obj={1}, Thread={2}",

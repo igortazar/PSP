@@ -72,15 +72,19 @@ namespace monitores
             // Create 2 threads 
             Thread t_producer = new Thread(new ThreadStart(app.Producer));
             Thread t_consumer = new Thread(new ThreadStart(app.Consumer));
+            Thread t_consumer2 = new Thread(new ThreadStart(app.Consumer));
+
 
             // Start threads 
             t_producer.Start();
             Thread.Sleep(500);
             t_consumer.Start();
+            t_consumer2.Start();
 
             // Waith for the threads to complete 
             t_producer.Join();
             t_consumer.Join();
+            t_consumer2.Join();
 
             Console.WriteLine("\nPress any key to complete the program.\n");
             Console.ReadKey(false);
