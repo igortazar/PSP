@@ -9,7 +9,7 @@ namespace Serializacion
         public string Sms { get; set; }
         public string Resumen { get; set;}
         public DateTime Stamp { get; set; }
-
+        public Mensaje() { }
         public Mensaje(string sms,string resumen)
         {
             this.Sms = sms;

@@ -7,6 +7,7 @@ using Serializacion;
 using System.Runtime.Serialization;
 using System.Runtime.Serialization.Formatters.Binary;
 using System.IO;
+using System.Xml.Serialization;
 
 namespace ClienteAsincrono
 {
@@ -148,7 +149,12 @@ namespace ClienteAsincrono
                     // All the data has arrived; put it in response.  
                     if (state.sb.Length > 1)
                     {
+                        //Deserializacion del objeto
                         response = state.sb.ToString();
+                        byte[] byteArray = Encoding.ASCII.GetBytes(response);
+                        MemoryStream stream = new MemoryStream(byteArray);
+                        Mensaje recibido = (Mensaje)new XmlSerializer(typeof(Mensaje)).Deserialize(stream);
+
                     }
                     // Signal that all bytes have been received.  
                     receiveDone.Set();
