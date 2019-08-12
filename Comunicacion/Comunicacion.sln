@@ -3,11 +3,15 @@ Microsoft Visual Studio Solution File, Format Version 12.00
 # Visual Studio Version 16
 VisualStudioVersion = 16.0.29123.88
 MinimumVisualStudioVersion = 10.0.40219.1
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Serializacion", "Serializacion\Serializacion.csproj", "{992FA1B5-39F4-4C23-A475-91C196237EDD}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Serializacion", "Serializacion\Serializacion.csproj", "{992FA1B5-39F4-4C23-A475-91C196237EDD}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServidorAsincrono", "ServidorAsincrono\ServidorAsincrono.csproj", "{AD0EC20E-BE3A-4A0A-9649-4AB76E8E59DC}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServidorAsincrono", "ServidorAsincrono\ServidorAsincrono.csproj", "{AD0EC20E-BE3A-4A0A-9649-4AB76E8E59DC}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClienteAsincrono", "ClienteAsincrono\ClienteAsincrono.csproj", "{167413DB-C4EE-49D0-AEB9-850E25F4103D}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClienteAsincrono", "ClienteAsincrono\ClienteAsincrono.csproj", "{167413DB-C4EE-49D0-AEB9-850E25F4103D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClienteSincrono", "ClienteSincrono\ClienteSincrono.csproj", "{0A39A58B-DCB2-4ECF-819D-1EA81A8EDCE9}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServidorSincrono", "ServidorSincrono\ServidorSincrono.csproj", "{7457420E-D0BF-4958-BED2-BDA4FA4C3CAE}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -27,6 +31,14 @@ Global
 		{167413DB-C4EE-49D0-AEB9-850E25F4103D}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{167413DB-C4EE-49D0-AEB9-850E25F4103D}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{167413DB-C4EE-49D0-AEB9-850E25F4103D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A39A58B-DCB2-4ECF-819D-1EA81A8EDCE9}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A39A58B-DCB2-4ECF-819D-1EA81A8EDCE9}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A39A58B-DCB2-4ECF-819D-1EA81A8EDCE9}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A39A58B-DCB2-4ECF-819D-1EA81A8EDCE9}.Release|Any CPU.Build.0 = Release|Any CPU
+		{7457420E-D0BF-4958-BED2-BDA4FA4C3CAE}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{7457420E-D0BF-4958-BED2-BDA4FA4C3CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{7457420E-D0BF-4958-BED2-BDA4FA4C3CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{7457420E-D0BF-4958-BED2-BDA4FA4C3CAE}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
