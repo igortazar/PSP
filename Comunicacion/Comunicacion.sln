@@ -9,9 +9,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServidorAsincrono", "Servid
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClienteAsincrono", "ClienteAsincrono\ClienteAsincrono.csproj", "{167413DB-C4EE-49D0-AEB9-850E25F4103D}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClienteSincrono", "ClienteSincrono\ClienteSincrono.csproj", "{0A39A58B-DCB2-4ECF-819D-1EA81A8EDCE9}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClienteSincrono", "ClienteSincrono\ClienteSincrono.csproj", "{0A39A58B-DCB2-4ECF-819D-1EA81A8EDCE9}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServidorSincrono", "ServidorSincrono\ServidorSincrono.csproj", "{7457420E-D0BF-4958-BED2-BDA4FA4C3CAE}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServidorSincrono", "ServidorSincrono\ServidorSincrono.csproj", "{7457420E-D0BF-4958-BED2-BDA4FA4C3CAE}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ComunicacionPrimerosPaso", "ComunicacionPrimerosPaso\ComunicacionPrimerosPaso.csproj", "{096399FD-35E2-40F5-B48A-AF46B78F5B5D}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "HttpClientYUri", "HttpClientYUri\HttpClientYUri.csproj", "{0A2E42F3-DFF2-4353-814C-5A30A3D92A32}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -39,6 +43,14 @@ Global
 		{7457420E-D0BF-4958-BED2-BDA4FA4C3CAE}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{7457420E-D0BF-4958-BED2-BDA4FA4C3CAE}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{7457420E-D0BF-4958-BED2-BDA4FA4C3CAE}.Release|Any CPU.Build.0 = Release|Any CPU
+		{096399FD-35E2-40F5-B48A-AF46B78F5B5D}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{096399FD-35E2-40F5-B48A-AF46B78F5B5D}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{096399FD-35E2-40F5-B48A-AF46B78F5B5D}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{096399FD-35E2-40F5-B48A-AF46B78F5B5D}.Release|Any CPU.Build.0 = Release|Any CPU
+		{0A2E42F3-DFF2-4353-814C-5A30A3D92A32}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{0A2E42F3-DFF2-4353-814C-5A30A3D92A32}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{0A2E42F3-DFF2-4353-814C-5A30A3D92A32}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{0A2E42F3-DFF2-4353-814C-5A30A3D92A32}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE
