@@ -173,12 +173,11 @@ namespace ClienteAsincrono
             Stream stream = new MemoryStream();
             formatter.Serialize(stream, sms);
             byte[] byteData = ((MemoryStream)stream).ToArray();
-            // Convert the string data to byte data using ASCII encoding.  
-            //byte[] byteData = Encoding.ASCII.GetBytes(data);
-
-            // Begin sending the data to the remote device.  
             client.BeginSend(byteData, 0, byteData.Length, 0,
                 new AsyncCallback(SendCallback), client);
+            // Convert the string data to byte data using ASCII encoding.  
+            //byte[] byteData = Encoding.ASCII.GetBytes(data);
+            // Begin sending the data to the remote device.  
         }
 
         private static void SendCallback(IAsyncResult ar)
