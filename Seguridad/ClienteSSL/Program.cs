@@ -29,16 +29,18 @@ namespace ClienteSSL
 
             // Do not allow this client to communicate with unauthenticated servers.
             // esta linea se debe quitar cuando es certificado sea valido en un servidor
-            return true;
+            return false;
         }
         public static void RunClient(string machineName, string serverName)
         {
             // Create a TCP/IP client socket.
             // machineName is the host running the server application.
             Int32 port = 443;
-            IPAddress localAddr = IPAddress.Parse("127.0.0.1");
-            // TcpListener server = new TcpListener(port)
-            TcpClient client = new TcpClient("127.0.0.1", port);
+            //IPAddress localAddr = IPAddress.Parse("192.168.33.1");
+            //IPEndPoint ipLocalEndPoint = new IPEndPoint(localAddr, 49999);
+            //TcpClient client = new TcpClient(ipLocalEndPoint);
+            TcpClient client = new TcpClient("192.168.33.11", 443);
+           // client.Connect("192.168.33.11", port);
             Console.WriteLine("Client connected.");
             // Create an SSL stream that will close the client's stream.
             SslStream sslStream = new SslStream(
@@ -50,9 +52,8 @@ namespace ClienteSSL
             // The server name must match the name on the server certificate.
             try
             {
-                //sslStream.AuthenticateAsClient(serverName, null, SslProtocols.None, false);
-
-                sslStream.AuthenticateAsClient(serverName);
+                sslStream.AuthenticateAsClient(serverName, null, SslProtocols.None, false);
+                //sslStream.AuthenticateAsClient("ServerSSL");
 
             }
             catch (AuthenticationException e)
@@ -131,7 +132,6 @@ namespace ClienteSSL
             {
                 serverCertificateName = args[1];
             }
-            Thread.Sleep(8000);
             SslTcpClient.RunClient(machineName, serverCertificateName);
             return 0;
         }

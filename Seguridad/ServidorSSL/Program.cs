@@ -22,9 +22,9 @@ namespace ServidorSSL
             //serverCertificate = X509Certificate.CreateFromCertFile(certificate);
             // Create a TCP/IP (IPv4) socket and listen for incoming connections.
             Int32 port = 443;
-            IPAddress localAddr = IPAddress.Parse("127.0.0.1");
+            //IPAddress localAddr = IPAddress.Parse("127.0.0.1");
             // TcpListener server = new TcpListener(port)
-            TcpListener listener = new TcpListener(localAddr, port);
+            TcpListener listener = new TcpListener(IPAddress.Any, port);
             listener.Start();
             while (true)
             {
