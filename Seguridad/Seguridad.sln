@@ -11,11 +11,13 @@ Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Asimetrico", "Asimetrico\As
 EndProject
 Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Keys", "Keys\Keys.csproj", "{FDD34CBA-5F61-4C1D-A260-76605B85B30B}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "Permisos", "Permisos\Permisos.csproj", "{38D48B42-922C-4194-BE0B-EE7D2BEFDB74}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "Permisos", "Permisos\Permisos.csproj", "{38D48B42-922C-4194-BE0B-EE7D2BEFDB74}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ClienteSSL", "ClienteSSL\ClienteSSL.csproj", "{000B9915-BE62-4913-BD8A-26240EF9EB88}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ClienteSSL", "ClienteSSL\ClienteSSL.csproj", "{000B9915-BE62-4913-BD8A-26240EF9EB88}"
 EndProject
-Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "ServidorSSL", "ServidorSSL\ServidorSSL.csproj", "{A2D00BF2-B29B-493F-80AA-100E9D4279FB}"
+Project("{9A19103F-16F7-4668-BE54-9A1E7A4F7556}") = "ServidorSSL", "ServidorSSL\ServidorSSL.csproj", "{A2D00BF2-B29B-493F-80AA-100E9D4279FB}"
+EndProject
+Project("{FAE04EC0-301F-11D3-BF4B-00C04F79EFBC}") = "PermisosRoles", "PermisosRoles\PermisosRoles.csproj", "{837476A6-48BC-4197-AD79-624B30DE9380}"
 EndProject
 Global
 	GlobalSection(SolutionConfigurationPlatforms) = preSolution
@@ -51,6 +53,10 @@ Global
 		{A2D00BF2-B29B-493F-80AA-100E9D4279FB}.Debug|Any CPU.Build.0 = Debug|Any CPU
 		{A2D00BF2-B29B-493F-80AA-100E9D4279FB}.Release|Any CPU.ActiveCfg = Release|Any CPU
 		{A2D00BF2-B29B-493F-80AA-100E9D4279FB}.Release|Any CPU.Build.0 = Release|Any CPU
+		{837476A6-48BC-4197-AD79-624B30DE9380}.Debug|Any CPU.ActiveCfg = Debug|Any CPU
+		{837476A6-48BC-4197-AD79-624B30DE9380}.Debug|Any CPU.Build.0 = Debug|Any CPU
+		{837476A6-48BC-4197-AD79-624B30DE9380}.Release|Any CPU.ActiveCfg = Release|Any CPU
+		{837476A6-48BC-4197-AD79-624B30DE9380}.Release|Any CPU.Build.0 = Release|Any CPU
 	EndGlobalSection
 	GlobalSection(SolutionProperties) = preSolution
 		HideSolutionNode = FALSE

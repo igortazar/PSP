@@ -8,7 +8,7 @@ namespace primerosPasos
     {
         static void Main(string[] args)
         {
-            Console.WriteLine("Hello World!");
+            Console.WriteLine("Hello World2!");
             MiClase[] ejemplo = new MiClase[3];
             ejemplo[0] = new MiClase();
             ejemplo[1] = new MiClase();
